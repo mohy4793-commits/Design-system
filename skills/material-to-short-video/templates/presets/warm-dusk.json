@@ -1,0 +1,9 @@
+{
+  "meta": { "name": "Warm Dusk", "version": "1.0" },
+  "color": {
+    "bg": "#1a1210", "surface": "#241a17", "text": "#fbefe6", "text2": "#e0cdbf", "muted": "#b8a294",
+    "accent": "#ffb347", "onAccent": "#2a1700",
+    "before": { "bg": "#150e0c", "card": "#1e1512", "text": "#a08b7d", "num": "#8c786b" },
+    "haloRGB": "255,179,71", "dotsRGB": "255,214,160"
+  }
+}

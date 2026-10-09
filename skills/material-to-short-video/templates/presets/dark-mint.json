@@ -1,0 +1,9 @@
+{
+  "meta": { "name": "Dark Mint", "version": "1.0" },
+  "color": {
+    "bg": "#040807", "surface": "#0b1210", "text": "#e9f4ef", "text2": "#b6cdc3", "muted": "#8aa69b",
+    "accent": "#2ee89a", "onAccent": "#03150e",
+    "before": { "bg": "#050909", "card": "#0b1210", "text": "#7e968c", "num": "#6a8178" },
+    "haloRGB": "46,232,154", "dotsRGB": "140,255,205"
+  }
+}

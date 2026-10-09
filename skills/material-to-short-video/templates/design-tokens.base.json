@@ -1,0 +1,25 @@
+{
+  "meta": { "name": "", "version": "1.0" },
+  "lang": "ar",
+  "dir": "rtl",
+  "canvas": { "w": 1080, "h": 1920, "fps": 30 },
+  "safe": { "top": 250, "bottom": 400, "side": 120 },
+  "area": { "tagTop": 262, "tagHeight": 64, "top": 340, "height": 1180, "width": 840 },
+  "font": {
+    "head": "'HeadFont','BodyFont',sans-serif",
+    "body": "'BodyFont',sans-serif",
+    "mono": "'MonoFont','BodyFont',monospace"
+  },
+  "type": {
+    "hero": 150, "cta": 100, "title": 96, "sub": 60, "subSmall": 52, "tag": 48,
+    "button": 56, "credit": 48, "beforeText": 64, "beforeNum": 84,
+    "minTitle": 80, "minSecondary": 48, "maxWords": 7
+  },
+  "motion": {
+    "fade": 0.3, "enter": 0.7, "wipe": 0.55,
+    "ease": "power3.out", "easeStrong": "expo.out", "easePop": "back.out(2)",
+    "featherX": 3, "featherY": 2.5
+  },
+  "audio": { "lufs": -14, "tp": -1.5, "lra": 11, "fadeOut": 1.5, "musicVolume": 0.5 },
+  "ornament": "globe"
+}

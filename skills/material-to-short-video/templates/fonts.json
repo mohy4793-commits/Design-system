@@ -1,0 +1,8 @@
+{
+  "_help": "ضع هنا ملفات الخطوط (woff2/woff/ttf) المنسوخة من المادة نفسها أو من مصدر رسمي. family = الاسم الذي يستخدمه التصميم (HeadFont/BodyFont/MonoFont أو أي اسم تضعه في design-tokens.json). weight يقبل نطاقًا مثل '500 600'. unicodeRange اختياري لتقسيم عربي/لاتيني.",
+  "dir": "graphics/assets/fonts",
+  "faces": [
+    { "family": "BodyFont", "weight": "400", "file": "YourFont-Regular.woff2" },
+    { "family": "BodyFont", "weight": "700", "file": "YourFont-Bold.woff2" }
+  ]
+}

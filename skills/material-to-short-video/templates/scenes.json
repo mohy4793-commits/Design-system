@@ -1,0 +1,12 @@
+{
+  "_help": "kind: title | media | before | cta. المشاهد تُرتَّب بالتتابع؛ bounds = حدود المشاهد بالثواني (تبدأ 0 وتنتهي بمدة الفيديو). media يشير إلى ملف فيديو أو صورة نسبةً لجذر المشروع. swaps = تبديل نص الوسم: [[ثانية نسبية, 'نص']]. wipe = دخول بالمسح بدل المزج. html مسموح داخل title/subtitle (مثل <em> للكلمة المفتاحية).",
+  "duration": 30,
+  "bounds": [0, 5, 12, 17, 24, 30],
+  "scenes": [
+    { "id": "intro", "kind": "title", "title": "اسم <em>الموضوع</em>", "subtitle": "جملة قصيرة توضح الفائدة", "tagline": "سطر ثانوي اختياري" },
+    { "id": "overview", "kind": "media", "media": "raw/overview.mp4", "tag": "نظرة عامة" },
+    { "id": "before", "kind": "before", "tag": "قبل · نص جامد", "title": "المفهوم", "lines": ["تعريف جامد بسطر أو سطرين", "8 × 8 = 64", "…وما المعنى؟"] },
+    { "id": "after", "kind": "media", "media": "raw/demo.mp4", "tag": "بعد · جرّب بنفسك", "wipe": true },
+    { "id": "cta", "kind": "cta", "title": "ابدأ <em>الآن</em>", "button": "ادخل وجرّب", "credit": "إعداد: اسمك" }
+  ]
+}

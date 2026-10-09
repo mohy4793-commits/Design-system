@@ -1,0 +1,9 @@
+{
+  "meta": { "name": "Light Paper", "version": "1.0" },
+  "color": {
+    "bg": "#f6f4ef", "surface": "#ffffff", "text": "#14181c", "text2": "#3d4650", "muted": "#5b6670",
+    "accent": "#0a7a5a", "onAccent": "#ffffff",
+    "before": { "bg": "#ecebe6", "card": "#e3e1da", "text": "#5a6169", "num": "#6e757c" },
+    "haloRGB": "10,122,90", "dotsRGB": "20,24,28"
+  }
+}

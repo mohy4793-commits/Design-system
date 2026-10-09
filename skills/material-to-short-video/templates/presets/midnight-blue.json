@@ -1,0 +1,9 @@
+{
+  "meta": { "name": "Midnight Blue", "version": "1.0" },
+  "color": {
+    "bg": "#0b1020", "surface": "#131a30", "text": "#eef2ff", "text2": "#c3cbe6", "muted": "#98a3c7",
+    "accent": "#7aa2ff", "onAccent": "#0b1020",
+    "before": { "bg": "#090d1b", "card": "#10162b", "text": "#7f8ab0", "num": "#6c7799" },
+    "haloRGB": "122,162,255", "dotsRGB": "160,190,255"
+  }
+}

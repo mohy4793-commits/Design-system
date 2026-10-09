@@ -1,0 +1,16 @@
+{
+  "name": "short-video",
+  "width": 1080, "height": 1920, "fps": 30, "duration": 30,
+  "encode": { "codec": "libx264", "preset": "medium", "crf": 18, "threads": 0, "pixFmt": "yuv420p", "audioBitrate": "192k", "intermediatePreset": "veryfast", "intermediateCrf": 14 },
+  "graphics": {
+    "dir": "graphics",
+    "renderCommand": ["hyperframes", "render", "-o", "out/scenes.mp4", "--no-browser-gpu", "-q", "high", "-f", "30"],
+    "outputDir": "graphics/out",
+    "skipRender": false,
+    "note": "غيّر أول عنصر إلى مسار hyperframes المحلي (مثل C:/hf-env/node_modules/.bin/hyperframes.cmd). ثبّته في مسار بلا حروف عربية."
+  },
+  "segments": [ { "type": "graphic", "name": "المشاهد", "path": "graphics/out/scenes.mp4", "start": 0, "end": 30 } ],
+  "music": { "file": "audio/music.mp3", "volume": 0.5, "fadeOut": 1.5, "duck": { "threshold": 0.04, "ratio": 8, "attack": 20, "release": 400 } },
+  "loudnorm": { "I": -14, "TP": -1.5, "LRA": 11 },
+  "output": { "video": "export/final_9x16.mp4", "thumbnail": "export/thumbnail.jpg", "thumbnailSource": "graphics/out/thumbnail.png", "thumbnailFallbackTime": 5 }
+}

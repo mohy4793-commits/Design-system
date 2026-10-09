@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مادة تجريبية</title>
+<style>
+  *{box-sizing:border-box;margin:0}
+  body{background:#0b0f14;color:#e8eef5;font-family:system-ui,sans-serif;padding:16px;line-height:1.6}
+  h1{font-size:22px;margin:8px 0 6px}
+  p.lead{color:#9fb0c3;font-size:14px;margin-bottom:14px}
+  #card{background:#121a24;border:1px solid #223244;border-radius:16px;padding:18px}
+  #card h2{font-size:16px;margin-bottom:12px;color:#7ec8ff}
+  .stage{height:150px;display:flex;align-items:center;justify-content:center;background:#0d141c;border-radius:12px;margin-bottom:14px}
+  #dot{width:60px;height:60px;border-radius:50%;background:#7ec8ff;transition:background .2s,border-radius .2s}
+  #dot.square{border-radius:10px;background:#ffb86b}
+  label{display:flex;justify-content:space-between;font-size:14px;color:#9fb0c3;margin-bottom:6px}
+  #size{width:100%;direction:ltr;accent-color:#7ec8ff;margin-bottom:12px}
+  #readout{font-family:monospace;background:#0d141c;border-radius:10px;padding:10px;font-size:14px;margin-bottom:12px}
+  #toggle{width:100%;padding:12px;border:0;border-radius:12px;background:#7ec8ff;color:#06121f;font-weight:700;font-size:15px}
+  .after{margin-top:600px;color:#6b7a8c;font-size:13px}
+</style>
+</head>
+<body>
+<h1>أداة تجريبية</h1>
+<p class="lead">حرّك المنزلق لتغيير الحجم، واضغط الزر لتبديل الشكل.</p>
+<div id="card">
+  <h2>الحجم والشكل</h2>
+  <div class="stage"><div id="dot"></div></div>
+  <label><span>الحجم</span><span id="val">60</span></label>
+  <input id="size" type="range" min="20" max="120" value="60">
+  <div id="readout">القطر = 60 px · الشكل = دائرة</div>
+  <button id="toggle" type="button">بدّل الشكل</button>
+</div>
+<p class="after">نهاية الصفحة (محتوى لا يجب أن يظهر تحت الأداة).</p>
+<script>
+  const dot=document.getElementById('dot'),size=document.getElementById('size'),val=document.getElementById('val'),ro=document.getElementById('readout'),tg=document.getElementById('toggle');
+  const upd=()=>{const d=+size.value;dot.style.width=dot.style.height=d+'px';val.textContent=Math.round(d);ro.textContent='القطر = '+Math.round(d)+' px · الشكل = '+(dot.classList.contains('square')?'مربع':'دائرة')};
+  size.addEventListener('input',upd);tg.addEventListener('click',()=>{dot.classList.toggle('square');upd()});upd();
+</script>
+</body>
+</html>
